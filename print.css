@@ -1,0 +1,15 @@
+.noprint, .main h1, #mainPara{
+    display: none;
+}
+
+.main{
+    margin-left: 0px;
+}
+
+.printHeader{
+    background-color: greenyellow;
+}
+
+.printHeader h3{
+    text-align: center;
+}
