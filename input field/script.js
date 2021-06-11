@@ -1,11 +1,17 @@
+var tmp =[];
+
 function buttonClick() {
 
     var dataTable = document.getElementById("inputList");
 
     var userInput = document.querySelector("input:last-child").value;
-    var dataEntry = document.createElement("option");
-    dataEntry.setAttribute("value", userInput);
-    dataTable.append(dataEntry)
+
+    if(!tmp.includes(userInput)){
+        tmp.push(userInput);
+        var dataEntry = document.createElement("option");
+        dataEntry.setAttribute("value", userInput);
+        dataTable.append(dataEntry);
+    };
 
     const inputBox = document.createElement("input");
     inputBox.setAttribute("list", "inputList");
